@@ -446,8 +446,8 @@ We will install [Postgres](http://www.postgresql.org/) using Homebrew.
 
 To install, run:
 
-$ brew update # Always good to do
-$ brew install postgresql
+    $ brew update # Always good to do
+    $ brew install postgresql
 
 ## Node.js
 
