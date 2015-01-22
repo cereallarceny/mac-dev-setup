@@ -8,12 +8,12 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 
 - [System update](#system-update)
 - [System preferences](#system-preferences)
-- [Google Chrome](#google-chrome)
+- [Cask](#cask)
+- [Browsers](#browsers)
 - [iTerm2](#iterm2)
 - [Homebrew](#homebrew)
 - [Consolas](#consolas)
 - [Beautiful terminal](#beautiful-terminal)
-- [iTerm2](#iterm2)
 - [Git](#git)
 - [Atom](#atom)
 - [Vim](#vim)
@@ -27,6 +27,8 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 - [JSHint](#jshint)
 - [Ruby and RVM](#ruby-and-rvm)
 - [LESS](#less)
+- [MAMP](#mamp)
+- [Transmit](#transmit)
 - [Heroku](#heroku)
 - [MongoDB](#mongodb)
 - [Redis](#redis)
@@ -49,11 +51,22 @@ In **Apple Icon > System Preferences**:
 - Keyboard > Delay Until Repeat > Short (all the way to the right)
 - Dock > Automatically hide and show the Dock
 
-## Google Chrome
+## Cask
 
-Install your favorite browser, mine happens to be Chrome.
+### Install
 
-Download from [www.google.com/chrome](https://www.google.com/intl/en/chrome/browser/). Open the **.dmg** file once it's done downloading (this will mount the disk image), and drag and drop the **Google Chrome** app into the Applications folder (on the Mac, most applications are installed this way). When done, you can unmount the disk in Finder (the small "eject" icon next to the disk under **Devices**).
+To install Cask, run the following command:
+
+    $ brew install caskroom/cask/brew-cask
+
+This will allow you to install Mac applications in the future using Homebrew.
+
+## Browsers
+
+To install all the browsers you'll need use Cask and run the following commands:
+
+    $ brew cask install google-chrome
+    $ brew cask install firefox
 
 ## iTerm2
 
@@ -212,7 +225,11 @@ To push code to your GitHub repositories, we're going to use the recommended HTT
 
 ## Atom
 
-Go to [atom.io](https://atom.io/) and download Atom. Suggested packages for installation are the following:
+Go to [atom.io](https://atom.io/) and download Atom or run the following command:
+
+    $ brew cask install atom
+
+Suggested packages for installation are the following:
 
  - autoclose-html
  - autocomplete-plus
@@ -638,6 +655,36 @@ The two options are the "input" and "output" files for the compiler. The command
 
 Read more about LESS on their page here: http://lesscss.org/
 
+## MAMP
+
+Sometimes it's useful to be able to spin up an easy Apache, MySQL, and PHP installation. You never know what you'll be getting into!
+
+### Install
+
+To install this, run the following
+
+    $ brew cask install mamp
+
+## Transmit
+
+Transmit is an FTP client and it does cost $30 or so, but it's very worth it. Best FTP client there is!
+
+### Install
+
+To install this, run the following
+
+    $ brew cask install transmit
+
+## Codekit
+
+Codekit abstracts the process of CSS (or Sass, Less, or Stylus) and Javascript (or Coffeescript) minification, concatenation, and code hinting from the console. It can be really useful for also managing Bower packages. This can be really useful to a front-end developer when you don't want to install Grunt or Gulp and build your own compilation files. Overall, it can save you from some mminor headaches, but it costs $30.
+
+### Install
+
+To install this, run the following
+
+    $ brew cask install codekit
+
 ## Heroku
 
 [Heroku](http://www.heroku.com/), if you're not already familiar with it, is a [Platform-as-a-Service](http://en.wikipedia.org/wiki/Platform_as_a_service) (PaaS) that makes it really easy to deploy your apps online. There are other similar solutions out there, but Heroku was among the first and is currently the most popular. Not only does it make a developer's life easier, but I find that having Heroku deployment in mind when building an app forces you to follow modern app development [best practices](http://www.12factor.net/).
@@ -795,10 +842,50 @@ This really depends on how you want to organize your files, but I like to put al
 
 Here is a quick list of some apps I use, and that you might find useful as well:
 
-- [Dropbox](https://www.dropbox.com/): File syncing to the cloud. I put all my documents in Dropbox. It syncs them to all my devices (laptop, mobile, tablet), and serves as a backup as well! **(Free for 2GB)**
-- [Google Drive](https://drive.google.com/): File syncing to the cloud too! I use Google Docs a lot to collaborate with others (edit a document with multiple people in real-time!), and sometimes upload other non-Google documents (pictures, etc.), so the app comes in handy for that. **(Free for 5GB)**
-- [1Password](https://agilebits.com/onepassword): Allows you to securely store your login and passwords. Even if you only use a few different passwords (they say you shouldn't!), this is really handy to keep track of all the accounts you sign up for! Also, they have a mobile app so you always have all your passwords with you (syncs with Dropbox). A little pricey though. There are free alternatives. **($50 for Mac app, $18 for iOS app)**
-- [Marked](http://markedapp.com/): As a developer, most of the stuff you write ends up being in [Markdown](http://daringfireball.net/projects/markdown/). In fact, this `README.md` file (possibly the most important file of a GitHub repo) is indeed in Markdown, written in Sublime Text, and I use Marked to preview the results everytime I save. **($4)**
-- [Path Finder](http://cocoatech.com/pathfinder/): I love OSX, it's Unix so great for developers, and all of it just works and looks pretty! Only thing I "miss" from Windows (OMG what did he say?), is a decent file explorer. I think Finder is a pain to use. So I gladly paid for this alternative, but I understand others might find it expensive just to not have to use Finder. **($40)**
-- [Evernote](https://evernote.com/): If I don't write something down, I'll forget it. As a developer, you learn so many new things every day, and technology keeps changing, it would be insane to want to keep it all in your head. So take notes, sync them to the cloud, and have them on all your devices. To be honest, I switched to [Simplenote](http://simplenote.com/) because I only take text notes, and I got tired of Evernote putting extra spaces between paragraphs when I copy & pasted into other applications. Simplenote is so much better for text notes (and it supports Markdown!). **(Both are free)**
-- [Moom](http://manytricks.com/moom/): Don't waste time resizing and moving your windows. Moom makes this very easy. **($10)**
+### Dropbox
+
+To install Dropbox run the following:
+
+    $ brew cask install dropbox
+
+### Google Drive
+
+To install Google Drive run the following:
+
+    $ brew cask install google-drive
+
+### 1Password
+
+To install 1Password run the following:
+
+    $ brew cask install 1password
+
+### Skype
+
+To install Skype run the following:
+
+    $ brew cask install skype
+
+### Slack
+
+To install Slack run the following:
+
+    $ brew cask install 1password
+
+### Chromecast
+
+To install Chromecast run the following:
+
+    $ brew cask install chromecast
+
+### Parallels
+
+To install Parallels run the following:
+
+    $ brew cask install parallels-desktop
+
+### Creative Cloud (for designers)
+
+To install Creative Cloud run the following:
+
+    $ brew cask install adobe-creative-cloud
