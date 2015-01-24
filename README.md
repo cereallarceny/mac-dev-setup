@@ -488,7 +488,7 @@ Open a new terminal for the `$PATH` changes to take effect.
 
 We also need to tell npm where to find the Xcode Command Line Tools, by running:
 
-    $ sudo xcode-select -switch /usr/bin
+    $ sudo xcode-select -switch /
 
 (If Xcode Command Line Tools were installed by Xcode, try instead:)
 
